@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR2TECH</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      /* Styles for the welcome message */
+      .text {
+        text-align: center;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        transition: opacity 1s ease-out, visibility 0s 10s, display 0s 10s; 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999; 
+      }
+
+      /* Class to hide the welcome message */
+      .hidden {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+      }
+
+      /* Add a rule to allow the rest of the content to shift up when the welcome message fades out */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .cancel-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #ff0000;
+        float: right;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+      }
+      /* Add any additional custom styles here if needed */
+    </style>
+  </head>
+
+  <body>
+   <!-- Welcome Message -->
+<div class="text" id="welcomeMessage">
+  <h1>Welcome to QR2TECH</h1>
+  <p>Technological Innovations for the Future</p>
+  <span class="cancel-icon" onclick="closeWelcomeMessage()">&times;</span>
+</div>
+
+
+    <!-- Navbar -->
+    <div class="navbar" id="myNavbar">
+      <a href="#home" class="brand-logo">
+        <img src="Images/QR2TECH ICON BLACK Background Removed.png" alt="QR2TECH Logo" 
+          class= "logo"
+          style="height: 30px;
+          margin-right: 10px;"
+          alt="Logo"
+          class="logo"
+        />
+        QR2TECH
+      </a>
+      <div class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#team"><i class="fa fa-user"></i> TEAM</a>
+        <a href="#products"><i class="fa fa-cube"></i> PRODUCTS</a>
+        <a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <a href="javascript:void(0)" class="menu-icon" onclick="toggleSidebar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="mySidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()"
+        >×</a
+      >
+      <a href="#about">ABOUT</a>
+      <a href="#team">TEAM</a>
+      <a href="#products">PRODUCTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+   
+    <header id="home" class="header">
+      <div class="header-content">
+        <a href="#about" class="btn-1">Learn more and start today</a>
+      
+      </div>
+      
+    </header>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>We are a Technological Firm</h2>
+        <p>Key features of our company:</p>
+        <div class="features">
+          <div class="feature-item">
+            <i class="fa fa-desktop"></i>
+            <h3>AI & Machine Learning</h3>
+            <p>We find patterns in data.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa fa-cog"></i>
+            <h3>Engineering</h3>
+            <p>We design real-time platforms.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa fa-diamond"></i>
+            <h3>Innovation</h3>
+            <p>We onboard the latest tech.</p>
+          </div>
+          <div class="feature-item">
+            <i class="fa fa-heart"></i>
+            <h3>Support</h3>
+            <p>We listen and innovate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Promo Section - "We know design" -->
+<div class="promo">
+  <div class="row-padding">
+    <div class="col">
+      <img class="image round-large" src="Screenshot 2024-04-07 at 18.20.04.png" alt="Tech Handshake">
+    </div>
+    <div class="col">
+      <h3>WE KNOW THE TECHNOLOGY OF THE FUTURE.</h3>
+      <p>Be it an idea, or an established challenge that you face, we can help you use the technologies of the future to automate and reach a lasting solution.</p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Team Section -->
+<section id="team" class="team-container">
+  <div class="container">
+    <h3>THE TEAM</h3>
+    <p class="description">The ones who run this company</p>
+    
+    <div class="team-cards">
+      <div class="card">
+        <img src="82c3511673a90c9b2cdbd1e430e6d67b.jpg" alt="AI">
+        <div class="staff">
+          <h3>Artificial Intelligence & Machine Learning</h3>
+          <p class="opacity">Our people use the latest scientific techniques and advanced analytical methods to solve real-life challenges</p>
+          <p>We use scientific methodology, extracting deep insights from massive datasets. We develop, test, and deploy real-time AI & ML applications.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="GettyImages-1488105257.jpeg" alt="Eng">
+        <div class="staff">
+          <h3>Technology Innovation</h3>
+          <p class="opacity">Our people identify, test, and deliver the latest tech solutions to business, enabling our Engineers to keep on innovating</p>
+          <p>We solve some of the world’s most complex problems; without our engineers, we couldn’t. The size and breadth of our Engineering function reflect the critical work they do.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="mike.png" alt="Mike">
+        <div class="staff">
+          <h3>Engineering</h3>
+          <p class="opacity">Our Engineering team collaborates seamlessly with our researchers, synergizing their expertise to propel us into the future.</p>
+          <p>Harnessing the power of cutting-edge technologies, our engineers design and implement real-time platforms for processing massive datasets with unparalleled speed and scale.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="c9431d6f819712b2ea35a0001b527cf2.jpg" alt="Dan">
+        <div class="staff">
+          <h3>Research</h3>
+          <p class="opacity">Our Research teams stand as beacons of intellectual curiosity and technological prowess. Collaborating seamlessly with every department within our organization.</p>
+          <p>Our researchers delve deep into the realms of machine learning, cloud services, big data analytics, virtual reality, engineering environments, and hardware accelerators.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section id="stats" class="stats-section">
+  <div class="stat-box">
+    <span class="stat-number" data-target="3">0</span>
+    <p>Partners</p>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number" data-target="5">0</span>
+    <p>Projects Done</p>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number" data-target="5">0</span>
+    <p>Happy Clients</p>
+  </div>
+  <div class="stat-box">
+    <span class="stat-number" data-target="3">0</span>
+    <p>Products</p>
+  </div>
+</section>
+
+
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <h3 class="section-title">OUR PRODUCTS</h3>
+      <p class="section-subtitle">Explore our innovative solutions</p>
+    
+      <div class="products-container">
+        <!-- Product 1 -->
+        <div class="product-box">
+          <h4>Rem Farm</h4>
+          <p id="rem-farm-short">A marketplace...</p>
+          <p id="rem-farm-full" class="full-desc hidden">A farming as a service infrastructure, where contemporary technology meets farming.</p>
+          <button class="toggle-btn" onclick="toggleDescription('rem-farm')">Read more</button>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product-box">
+          <h4>Better Life</h4>
+          <p id="better-life-short">An innovative solution...</p>
+          <p id="better-life-full" class="full-desc hidden">An innovative solution designed to streamline business processes, enhance productivity, and drive growth through cutting-edge technology.</p>
+          <button class="toggle-btn" onclick="toggleDescription('better-life')">Read more</button>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product-box">
+          <h4>Gidi Up</h4>
+          <p id="gidi-up-short">Provides comprehensive...</p>
+          <p id="gidi-up-full" class="full-desc hidden">Provides comprehensive services for managing and optimizing your IT infrastructure, ensuring seamless operations.</p>
+          <button class="toggle-btn" onclick="toggleDescription('gidi-up')">Read more</button>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product-box">
+          <h4>Xplorer</h4>
+          <p id="xplorer-short">Offers unparalleled...</p>
+          <p id="xplorer-full" class="full-desc hidden">Offers unparalleled solutions for data analytics and business intelligence, empowering you to make data-driven decisions.</p>
+          <button class="toggle-btn" onclick="toggleDescription('xplorer')">Read more</button>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h3>Contact Us</h3>
+  <form action="contact.php" method="post">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="subject" placeholder="Subject" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+      <img
+        src="https://qr2tech.s3.eu-west-2.amazonaws.com/Images/map.jpg"
+        alt="Map"
+        class="map-img"
+      />
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#home" class="to-top-btn"
+        ><i class="fa fa-arrow-up"></i> To the top</a
+      >
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <p>© 2024 QR2TECH. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to hide welcome message -->
+    <script>
+      // JavaScript to hide the welcome message after 2 seconds
+      setTimeout(function() {
+        document.getElementById('welcomeMessage').classList.add('hidden');
+      }, 10000);  // 10000 milliseconds = 10 seconds
+    </script>
+    <!-- External JS -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
